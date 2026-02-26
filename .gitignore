@@ -22,8 +22,9 @@ share/python-wheels/
 *.egg
 MANIFEST
 
-# Virtual Environment
+# Virtual Environments
 venv/
+venv_stable/
 ENV/
 env/
 
@@ -37,5 +38,7 @@ env/
 .idea/
 
 # Project Specific
-data/financial_document_*.pdf
+data/
 outputs/
+*.pdf
+install_err.txt
