@@ -1,0 +1,21 @@
+# Bug Report & Issues List (Debug Mode)
+
+The following bugs and issues have been identified in the current version of the project. This project is intentionally built with errors for debugging practice.
+
+## Core Logic & Syntax Bugs
+1. **Self-Assignment Error (`agents.py` line 12)**: `llm = llm` is used without `llm` being defined, causing a NameError.
+2. **Incorrect Tool Argument (`agents.py` line 28)**: The Agent class expects `tools` (plural) but `tool` (singular) is used.
+3. **Undefined Class (`tools.py` line 24)**: The `Pdf` class is referenced but not imported or defined.
+4. **Variable Mismatch (`main.py` line 52)**: The `run_crew` function expects parameters that aren't fully utilized in the current Crew/Task setup.
+5. **Restrictive Execution (`agents.py` lines 30-31)**: `max_iter=1` and `max_rpm=1` prevent agents from performing multi-step reasoning.
+6. **Task/Agent Import Conflict (`task.py` line 4)**: The `verifier` agent is imported but not correctly assigned as a task or used properly in the analysis flow.
+
+## Intentional "Unhelpful" AI Behavior
+1. **Unethical BACKSTORY**: Agents are instructed to "make up investment advice" and "ignore regulatory compliance."
+2. **Hallucination Instructions**: Tasks explicitly tell agents to "hallucinate financial terms" and "include random URLs that may or may not be related."
+3. **Contradictory Outputs**: Expected outputs include "Include financial websites that definitely don't exist" and "Feel free to contradict yourself."
+
+## Setup Issues
+1. **Requirement Filename**: `README.md` suggests `pip install -r requirement.txt` (singular), but the file is named `requirements.txt` (plural).
+2. **Missing API Keys**: No `.env.example` or warning for missing Serper/OpenAI/Gemini API keys.
+3. **Placeholder Data**: `data/sample.pdf` is mentioned as a placeholder but may not exist in a functional state.

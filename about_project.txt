@@ -1,0 +1,20 @@
+# About This Project: Financial Document Analyzer
+
+## Overview
+The Financial Document Analyzer is an AI-powered system designed to process and analyze corporate financial reports, investment updates, and financial statements. It uses a multi-agent orchestration framework (CrewAI) and a FastAPI backend to provide automated insights for investors and analysts.
+
+## Core Features
+- **PDF Document Processing**: Upload and process financial documents in PDF format.
+- **AI-Driven Analysis**: Uses specialized AI agents to extract key financial metrics and trends.
+- **Investment Recommendations**: Generates buy/sell/hold recommendations based on document data.
+- **Risk Assessment**: Identifies potential market risks and volatility factors.
+- **Market Insights**: Provides context-aware analysis of corporate financial health.
+
+## Technology Stack
+- **Backend**: FastAPI
+- **AI Orchestration**: CrewAI
+- **Language**: Python 3.x
+- **Environment Management**: python-dotenv
+
+## Educational Purpose
+This project is currently configured as a "Debug Assignment." It contains intentional logical errors, syntax bugs, and "unhelpful" AI configurations designed to test a developer's ability to identify and fix issues in a complex AI application.
